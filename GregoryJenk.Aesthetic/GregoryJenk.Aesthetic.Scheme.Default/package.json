@@ -1,0 +1,36 @@
+{
+  "name": "gregoryjenk.aesthetic.scheme.default",
+  "description": "",
+  "version": "1.0.0",
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "author": {
+    "email": "gregoryjenk@gmail.com",
+    "name": "Gregory Jenkins",
+    "url": "http://www.gregoryjenk.com"
+  },
+  "bugs": {
+    "url": "https://github.com/gregoryjenk/GregoryJenk.Aesthetic/issues"
+  },
+  "dependencies": {
+    "animate.css": "3.5.2",
+    "bootstrap": "3.3.7",
+    "font-awesome": "4.7.0",
+    "jquery": "3.1.1"
+  },
+  "devDependencies": {
+    "del": "3.0.0",
+    "gulp": "3.9.1",
+    "gulp-less": "3.3.2",
+    "gulp-minify": "1.0.0",
+    "less": "2.7.2"
+  },
+  "homepage": "https://github.com/gregoryjenk/GregoryJenk.Aesthetic",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gregoryjenk/GregoryJenk.Aesthetic.git"
+  }
+}
