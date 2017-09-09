@@ -1,0 +1,5 @@
+﻿{
+  "resolution": {
+    "main": "./TypeScripts/Typings/"
+  }
+}

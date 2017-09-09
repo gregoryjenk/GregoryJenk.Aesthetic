@@ -32,12 +32,21 @@
   </PropertyGroup>
   <ItemGroup>
     <Content Include="package.json" />
-  </ItemGroup>
-  <ItemGroup>
-    <TypeScriptCompile Include="typings\index.d.ts" />
+    <Content Include="TypeScripts\Typings\globals\node\typings.json" />
+    <Content Include="typings.json" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="gulpfile.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="TypeScripts\" />
+    <Folder Include="TypeScripts\Typings\" />
+    <Folder Include="TypeScripts\Typings\globals\" />
+    <Folder Include="TypeScripts\Typings\globals\node\" />
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="TypeScripts\Typings\globals\node\index.d.ts" />
+    <TypeScriptCompile Include="TypeScripts\Typings\index.d.ts" />
   </ItemGroup>
   <!-- Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them. -->
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="False" />
