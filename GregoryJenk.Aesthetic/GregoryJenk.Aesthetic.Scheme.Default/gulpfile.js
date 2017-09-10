@@ -8,32 +8,32 @@ var minify = require("gulp-minify");
 var paths = {
     lib: [
         {
-            src: "./node_modules/animate.css/animate.min.css",
-            dest: "./dist/lib/animate.css/"
+            src: "./node_modules/bootstrap/dist/*/**",
+            dest: "./wwwroot/lib/bootstrap/dist/"
         },
         {
-            src: "./node_modules/font-awesome/css/font-awesome.css",
-            dest: "./dist/lib/font-awesome/css/"
+            src: "./node_modules/font-awesome/*/**",
+            dest: "./wwwroot/lib/font-awesome/"
         },
         {
-            src: "./node_modules/font-awesome/fonts/*",
-            dest: "./dist/lib/font-awesome/fonts/"
+            src: "./node_modules/jquery/dist/*",
+            dest: "./wwwroot/lib/jquery/dist/"
         }
     ]
 };
 
 gulp.task("clean", function () {
     return del([
-        "./dist/css/**/*",
-        "./dist/js/**/*",
-        "./dist/lib/**/*"
+        "./wwwroot/dist/css/**/*",
+        "./wwwroot/dist/js/**/*",
+        "./wwwroot/lib/**/*"
     ]);
 });
 
 gulp.task("less", function () {
     return gulp.src("./Less/**/*.less")
         .pipe(less())
-        .pipe(gulp.dest("./dist/css"));
+        .pipe(gulp.dest("./wwwroot/dist/css"));
 });
 
 gulp.task("lib", function () {
@@ -43,7 +43,7 @@ gulp.task("lib", function () {
 });
 
 gulp.task("minify", function () {
-    gulp.src("./dist/js/**/*.js")
+    gulp.src("./wwwroot/dist/js/**/*.js")
         .pipe(minify({
             ext: {
                 src: ".js",
@@ -55,5 +55,5 @@ gulp.task("minify", function () {
                 "-min.js"
             ]
         }))
-        .pipe(gulp.dest("./wwwroot/app/js/"));
+        .pipe(gulp.dest("./wwwroot/dist/js/"));
 });
