@@ -35,16 +35,22 @@
     <Content Include="package.json" />
     <Content Include="TypeScripts\Typings\globals\node\typings.json" />
     <Content Include="typings.json" />
+    <Content Include="wwwroot\dist\images\favicon.ico" />
+    <Content Include="wwwroot\dist\templates\default-style-guide.html" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="gulpfile.js" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Less\" />
+    <Folder Include="wwwroot\" />
     <Folder Include="TypeScripts\" />
     <Folder Include="TypeScripts\Typings\" />
     <Folder Include="TypeScripts\Typings\globals\" />
     <Folder Include="TypeScripts\Typings\globals\node\" />
+    <Folder Include="wwwroot\dist\" />
+    <Folder Include="wwwroot\dist\images\" />
+    <Folder Include="wwwroot\dist\templates\" />
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="TypeScripts\Typings\globals\node\index.d.ts" />
