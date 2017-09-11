@@ -2,6 +2,7 @@ language: node_js
 node_js:
   - "6"
 before_script:
-  - cd /GregoryJenk.Aesthetic/GregoryJenk.Aesthetic.Scheme.Default
+  - cd ./GregoryJenk.Aesthetic/GregoryJenk.Aesthetic.Scheme.Default
   - npm install
-#script: /GregoryJenk.Aesthetic/GregoryJenk.Aesthetic.Scheme.Default/gulp less
+script:
+  - gulp less
