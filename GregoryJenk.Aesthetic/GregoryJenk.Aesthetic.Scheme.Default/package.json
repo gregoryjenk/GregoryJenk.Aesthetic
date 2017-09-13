@@ -11,6 +11,12 @@
     "name": "Gregory Jenkins",
     "url": "http://www.gregoryjenk.com"
   },
+  "keywords": [
+    "style",
+    "gulp",
+    "less",
+    "css"
+  ],
   "bugs": {
     "url": "https://github.com/gregoryjenk/GregoryJenk.Aesthetic/issues"
   },
