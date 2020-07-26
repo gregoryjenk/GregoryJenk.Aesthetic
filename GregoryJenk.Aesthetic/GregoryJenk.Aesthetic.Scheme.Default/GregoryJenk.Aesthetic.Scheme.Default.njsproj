@@ -32,7 +32,7 @@
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>
-    <Content Include="Less\default.less" />
+    <Content Include="src\less\default.less" />
     <Content Include="package.json" />
     <Content Include="wwwroot\dist\images\favicon.ico" />
     <Content Include="wwwroot\dist\templates\default-style-guide.html" />
@@ -41,7 +41,8 @@
     <Compile Include="gulpfile.js" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Less\" />
+    <Folder Include="src\less\" />
+    <Folder Include="src\" />
     <Folder Include="wwwroot\" />
     <Folder Include="wwwroot\dist\" />
     <Folder Include="wwwroot\dist\images\" />
