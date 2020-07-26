@@ -1,7 +1,7 @@
 {
-  "name": "gregoryjenk-aesthetic-scheme-default",
+  "name": "@gregoryjenk/aesthetic-scheme-default",
   "description": "The shared NPM package with resources for default personal branding.",
-  "version": "1.1.0",
+  "version": "2.0.0",
   "private": false,
   "publishConfig": {
     "access": "public"
@@ -9,7 +9,7 @@
   "author": {
     "email": "gregoryjenk@gmail.com",
     "name": "Gregory Jenkins",
-    "url": "http://www.gregoryjenk.com"
+    "url": "https://www.gregoryjenk.com"
   },
   "keywords": [
     "style",
@@ -21,17 +21,19 @@
     "url": "https://github.com/gregoryjenk/GregoryJenk.Aesthetic/issues"
   },
   "dependencies": {
-    
+
   },
   "devDependencies": {
-    "bootstrap": "3.3.7",
-    "del": "3.0.0",
-    "font-awesome": "4.7.0",
-    "gulp": "3.9.1",
-    "gulp-less": "3.3.2",
-    "gulp-minify": "1.0.0",
-    "jquery": "3.1.1",
-    "less": "2.7.2"
+    "bootstrap": "4.5.0",
+    "del": "5.1.0",
+    "gulp": "4.0.2",
+    "gulp-clean-css": "4.3.0",
+    "gulp-less": "4.0.1",
+    "gulp-rename": "2.0.0",
+    "gulp-sourcemaps": "2.6.5",
+    "jquery": "3.5.1",
+    "less": "3.12.2",
+    "popper.js": "1.16.1"
   },
   "homepage": "https://github.com/gregoryjenk/GregoryJenk.Aesthetic",
   "license": "MIT",
