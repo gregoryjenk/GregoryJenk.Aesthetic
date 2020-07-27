@@ -1,59 +1,59 @@
-﻿/// <binding BeforeBuild="less, minify" Clean="clean" />
+﻿/// <binding BeforeBuild="default" Clean="clean" />
 
+var cleanCSS = require("gulp-clean-css");
 var del = require("del");
 var gulp = require("gulp");
 var less = require("gulp-less");
-var minify = require("gulp-minify");
+var rename = require("gulp-rename");
+var sourcemaps = require("gulp-sourcemaps");
 
 var paths = {
     lib: [
-        {
-            src: "./node_modules/bootstrap/dist/*/**",
-            dest: "./wwwroot/lib/bootstrap/dist/"
-        },
-        {
-            src: "./node_modules/font-awesome/*/**",
-            dest: "./wwwroot/lib/font-awesome/"
-        },
-        {
-            src: "./node_modules/jquery/dist/*",
-            dest: "./wwwroot/lib/jquery/dist/"
-        }
+        "./node_modules/bootstrap/dist/css/bootstrap.min.css",
+        "./node_modules/bootstrap/dist/js/bootstrap.min.js",
+        "./node_modules/jquery/dist/jquery.slim.min.js",
+        "./node_modules/popper.js/dist/umd/popper.min.js"
     ]
 };
 
 gulp.task("clean", function () {
     return del([
-        "./wwwroot/dist/css/**/*",
-        "./wwwroot/dist/js/**/*",
-        "./wwwroot/lib/**/*"
+        "./dist/css",
+        "./dist/js",
+        "./lib"
     ]);
 });
 
-gulp.task("less", function () {
-    return gulp.src("./Less/**/*.less")
-        .pipe(less())
-        .pipe(gulp.dest("./wwwroot/dist/css"));
+gulp.task("clean-css", function () {
+    return del([
+        "./dist/css"
+    ]);
 });
 
 gulp.task("lib", function () {
-    for (var i = 0; i < paths.lib.length; i++) {
-        gulp.src(paths.lib[i].src).pipe(gulp.dest(paths.lib[i].dest));
-    }
+    return gulp.src(paths.lib, { base: "node_modules" })
+        .pipe(gulp.dest("./lib"));
 });
 
-gulp.task("minify", function () {
-    gulp.src("./wwwroot/dist/js/**/*.js")
-        .pipe(minify({
-            ext: {
-                src: ".js",
-                min: ".min.js"
-            },
-            exclude: ["tasks"],
-            ignoreFiles: [
-                ".combo.js",
-                "-min.js"
-            ]
-        }))
-        .pipe(gulp.dest("./wwwroot/dist/js/"));
+gulp.task("less", function () {
+    return gulp.src("./src/less/**/*.less")
+        .pipe(less())
+        .pipe(gulp.dest("./dist/css"));
 });
+
+gulp.task("min-css", function () {
+    return gulp.src("./dist/css/**/*.css")
+        //.pipe(sourcemaps.init())
+        .pipe(cleanCSS())
+        //.pipe(sourcemaps.write())
+        .pipe(rename({
+            suffix: ".min"
+        }))
+        .pipe(gulp.dest("./dist/css"));
+});
+
+gulp.task("watch-less", function () {
+    return gulp.watch("./src/less/**/*", gulp.series("clean-css", "less", "min-css"));
+});
+
+gulp.task("default", gulp.series("clean", "lib", "less", "min-css"));
