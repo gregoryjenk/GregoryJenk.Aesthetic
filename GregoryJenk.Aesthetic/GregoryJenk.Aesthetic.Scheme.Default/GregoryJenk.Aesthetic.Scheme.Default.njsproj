@@ -33,6 +33,9 @@
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>
+    <Content Include="dist\fonts\telex\telex-regular-400-latin-ext.woff2" />
+    <Content Include="dist\fonts\telex\telex-regular-400-latin.woff2" />
+    <Content Include="dist\fonts\telex\telex-regular-400.ttf" />
     <Content Include="README.md" />
     <Content Include="src\less\default.less" />
     <Content Include="package.json" />
@@ -43,6 +46,8 @@
     <Compile Include="gulpfile.js" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="dist\fonts\" />
+    <Folder Include="dist\fonts\telex\" />
     <Folder Include="src\less\" />
     <Folder Include="src\" />
     <Folder Include="dist\" />

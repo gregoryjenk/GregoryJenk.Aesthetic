@@ -1,7 +1,7 @@
 {
   "name": "@gregoryjenk/aesthetic-scheme-default",
   "description": "The shared NPM package with resources for default personal branding.",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "private": false,
   "publishConfig": {
     "access": "public"
@@ -35,7 +35,7 @@
     "less": "3.12.2",
     "popper.js": "1.16.1"
   },
-  "homepage": "https://github.com/gregoryjenk/GregoryJenk.Aesthetic",
+  "homepage": "https://www.gregoryjenk.com",
   "license": "MIT",
   "repository": {
     "type": "git",
