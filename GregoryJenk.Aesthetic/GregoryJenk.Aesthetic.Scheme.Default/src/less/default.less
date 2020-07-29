@@ -1,1 +1,70 @@
-﻿
+﻿@accent-colour: #009999;
+@accent-dark-colour: #007777;
+@accent-light-colour: #00bbbb;
+@complementary-colour: #990000;
+@complementary-dark-colour: #770000;
+@complementary-light-colour: #bb0000;
+@black-colour: #000000;
+@grey-colour: #777777;
+@grey-dark-colour: #444444;
+@grey-darkest-colour: #111111;
+@grey-light-colour: #bbbbbb;
+@grey-lightest-colour: #eeeeee;
+@white-colour: #ffffff;
+
+//Latin Extended.
+@font-face {
+    /*font-display: swap;*/
+    font-family: "Telex";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Telex Regular"),
+        local("Telex-Regular"),
+        url("../../dist/fonts/telex/telex-regular-400-latin-ext.woff2") format("woff2"),
+        url("../../dist/fonts/telex/telex-regular-400.ttf") format("truetype");
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+//Latin.
+@font-face {
+    /*font-display: swap;*/
+    font-family: "Telex";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Telex Regular"),
+        local("Telex-Regular"),
+        url("../../dist/fonts/telex/telex-regular-400-latin.woff2") format("woff2"),
+        url("../../dist/fonts/telex/telex-regular-400.ttf") format("truetype");
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+body {
+    background-color: @grey-lightest-colour;
+    font-family: "Telex", sans-serif;
+}
+
+footer {
+    background-color: @grey-darkest-colour;
+    bottom: 0px;
+    color: @grey-light-colour;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    position: absolute;
+}
+
+h1 {
+    text-transform: uppercase;
+}
+
+h2 {
+    color: @grey-colour;
+    font-size: x-large;
+    text-transform: uppercase;
+}
+
+a, a:focus, a:hover {
+    color: @accent-colour;
+    text-decoration: none;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
