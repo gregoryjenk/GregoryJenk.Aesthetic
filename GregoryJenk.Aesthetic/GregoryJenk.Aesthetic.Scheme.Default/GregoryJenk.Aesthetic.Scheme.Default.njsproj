@@ -40,7 +40,7 @@
     <Content Include="src\less\default.less" />
     <Content Include="package.json" />
     <Content Include="dist\images\favicon.ico" />
-    <Content Include="dist\html\style-guide.html" />
+    <Content Include="src\html\style-guide.html" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="gulpfile.js" />
@@ -52,7 +52,7 @@
     <Folder Include="src\" />
     <Folder Include="dist\" />
     <Folder Include="dist\images\" />
-    <Folder Include="dist\html\" />
+    <Folder Include="src\html\" />
   </ItemGroup>
   <!-- Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them. -->
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="False" />
