@@ -41,6 +41,7 @@
     <Content Include="package.json" />
     <Content Include="dist\images\favicon.ico" />
     <Content Include="src\html\style-guide.html" />
+    <Content Include="src\less\variable.less" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="gulpfile.js" />

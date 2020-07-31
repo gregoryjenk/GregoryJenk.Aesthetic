@@ -36,7 +36,7 @@ gulp.task("lib", function () {
 });
 
 gulp.task("less", function () {
-    return gulp.src("./src/less/**/*.less")
+    return gulp.src(["./src/less/**/*.less", "!./src/less/variable.less"])
         .pipe(less())
         .pipe(gulp.dest("./dist/css"));
 });
