@@ -7,7 +7,7 @@
 3. Run the ```npm install``` command.
 4. Run the ```gulp``` command.
 
-See the published [NPM package here](https://www.npmjs.com/package/@gregoryjenk/aesthetic-scheme-default/).
+See the published [NPM package here](https://www.npmjs.com/package/@gregoryjenk/aesthetic-scheme-default).
 
 ## Builds
 
