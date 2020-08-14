@@ -1,4 +1,4 @@
-version: {branch}.{build}
+version: '{branch}.{build}'
 environment:
   nodejs_version: 14
 image: Visual Studio 2019
