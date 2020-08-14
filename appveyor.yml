@@ -3,5 +3,5 @@ environment:
   nodejs_version: 14
 image: Visual Studio 2019
 build:
-  project: ./GregoryJenk.Aesthetic/GregoryJenk.Aesthetic.sln
+  project: ./src/GregoryJenk.Aesthetic.sln
   verbosity: detailed

@@ -3,7 +3,7 @@
 ## Getting Started
 
 1. Clone this Aesthetic respository.
-2. Set [GregoryJenk.Aesthetic/GregoryJenk.Aesthetic.Scheme.Default](./GregoryJenk.Aesthetic/GregoryJenk.Aesthetic.Scheme.Default) as the current directory.
+2. Set [src/GregoryJenk.Aesthetic.Scheme.Default](./src/GregoryJenk.Aesthetic.Scheme.Default) as the current directory.
 3. Run the ```npm install``` command.
 4. Run the ```gulp``` command.
 
