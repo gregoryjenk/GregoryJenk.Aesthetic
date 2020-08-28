@@ -1,7 +1,7 @@
 {
   "name": "@gregoryjenk/aesthetic-scheme-default",
   "description": "The shared NPM package with resources for default personal branding.",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "private": false,
   "publishConfig": {
     "access": "public"
@@ -19,9 +19,6 @@
   ],
   "bugs": {
     "url": "https://github.com/gregoryjenk/GregoryJenk.Aesthetic/issues"
-  },
-  "dependencies": {
-
   },
   "devDependencies": {
     "bootstrap": "4.5.0",

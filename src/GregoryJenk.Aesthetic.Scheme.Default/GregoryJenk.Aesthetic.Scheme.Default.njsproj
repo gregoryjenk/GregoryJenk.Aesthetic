@@ -36,7 +36,9 @@
     <Content Include="dist\fonts\telex\telex-regular-400-latin-ext.woff2" />
     <Content Include="dist\fonts\telex\telex-regular-400-latin.woff2" />
     <Content Include="dist\fonts\telex\telex-regular-400.ttf" />
+    <Content Include="package-lock.json" />
     <Content Include="README.md" />
+    <Content Include="src\images\icons\code-icon.svg" />
     <Content Include="src\less\default.less" />
     <Content Include="package.json" />
     <Content Include="dist\images\favicon.ico" />
@@ -49,11 +51,13 @@
   <ItemGroup>
     <Folder Include="dist\fonts\" />
     <Folder Include="dist\fonts\telex\" />
+    <Folder Include="src\images\icons\" />
     <Folder Include="src\less\" />
     <Folder Include="src\" />
     <Folder Include="dist\" />
     <Folder Include="dist\images\" />
     <Folder Include="src\html\" />
+    <Folder Include="src\images\" />
   </ItemGroup>
   <!-- Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them. -->
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="False" />

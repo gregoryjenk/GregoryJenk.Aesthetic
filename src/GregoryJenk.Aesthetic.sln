@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30406.217
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "GregoryJenk.Aesthetic.Scheme.Default", "GregoryJenk.Aesthetic.Scheme.Default\GregoryJenk.Aesthetic.Scheme.Default.njsproj", "{372D5CFA-42A0-46EC-B13B-8586B33AA5DE}"
 EndProject
@@ -18,5 +18,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {86F3B894-E27D-44BF-8DFC-129C04A73E83}
 	EndGlobalSection
 EndGlobal
