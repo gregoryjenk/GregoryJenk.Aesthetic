@@ -36,9 +36,14 @@
     <Content Include="dist\fonts\telex\telex-regular-400-latin-ext.woff2" />
     <Content Include="dist\fonts\telex\telex-regular-400-latin.woff2" />
     <Content Include="dist\fonts\telex\telex-regular-400.ttf" />
+    <Content Include="dist\images\icons\code-black-16x16-icon.png" />
+    <Content Include="dist\images\icons\code-black-32x32-icon.png" />
+    <Content Include="dist\images\icons\code-black-48x48-icon.png" />
+    <Content Include="dist\images\icons\code-black-64x64-icon.png" />
     <Content Include="package-lock.json" />
     <Content Include="README.md" />
-    <Content Include="src\images\icons\code-icon.svg" />
+    <Content Include="src\images\icons\code-black-icon.svg" />
+    <Content Include="src\images\icons\koala-emoji-icon.svg" />
     <Content Include="src\less\default.less" />
     <Content Include="package.json" />
     <Content Include="dist\images\favicon.ico" />
@@ -51,6 +56,7 @@
   <ItemGroup>
     <Folder Include="dist\fonts\" />
     <Folder Include="dist\fonts\telex\" />
+    <Folder Include="dist\images\icons\" />
     <Folder Include="src\images\icons\" />
     <Folder Include="src\less\" />
     <Folder Include="src\" />
