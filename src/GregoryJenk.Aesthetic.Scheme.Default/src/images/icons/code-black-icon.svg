@@ -11,7 +11,9 @@
       stroke-width: 1.4px;
     }
   </style>
-  <line x1="10" y1="2" x2="6" y2="14" />
-  <path d="M 5 4 L 1 8 L 5 12" />
-  <path d="M 11 4 L 15 8 L 11 12" />
+  <g>
+    <line x1="10" y1="2" x2="6" y2="14" />
+    <path d="M 5 4 L 1 8 L 5 12" />
+    <path d="M 11 4 L 15 8 L 11 12" />
+  </g>
 </svg>
