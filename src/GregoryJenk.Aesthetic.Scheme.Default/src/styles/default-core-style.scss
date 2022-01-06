@@ -3,7 +3,7 @@
     /*font-display: swap;*/
     font-family: "Telex";
     font-style: normal;
-    font-weight: 400;
+    font-weight: $text-font-weight;
     src: local("Telex Regular"),
         local("Telex-Regular"),
         url("../../dist/fonts/telex/telex-regular-400-latin-ext-font.woff2") format("woff2"),
@@ -16,7 +16,7 @@
     /*font-display: swap;*/
     font-family: "Telex";
     font-style: normal;
-    font-weight: 400;
+    font-weight: $text-font-weight;
     src: local("Telex Regular"),
         local("Telex-Regular"),
         url("../../dist/fonts/telex/telex-regular-400-latin-font.woff2") format("woff2"),
@@ -25,26 +25,27 @@
 }
 
 body {
-    background-color: $grey-lightest-colour;
+    background-color: $spectrum-1-colour;
+    color: $spectrum-5-colour;
     font-family: "Telex", sans-serif;
 }
 
 footer {
-    background-color: $grey-darkest-colour;
+    background-color: $spectrum-5-colour;
     bottom: 0px;
-    color: $grey-light-colour;
+    color: $spectrum-2-colour;
     padding-bottom: 50px;
     padding-top: 50px;
     position: absolute;
 }
 
 h1 {
-    color: $black-colour;
+    color: $spectrum-6-colour;
     text-transform: uppercase;
 }
 
 h2 {
-    color: $grey-colour;
+    color: $spectrum-3-colour;
     font-size: x-large;
     text-transform: uppercase;
 }
