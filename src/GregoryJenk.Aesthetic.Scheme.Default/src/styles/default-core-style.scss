@@ -25,43 +25,43 @@
 }
 
 body {
-    background-color: @grey-lightest-colour;
+    background-color: $grey-lightest-colour;
     font-family: "Telex", sans-serif;
 }
 
 footer {
-    background-color: @grey-darkest-colour;
+    background-color: $grey-darkest-colour;
     bottom: 0px;
-    color: @grey-light-colour;
+    color: $grey-light-colour;
     padding-bottom: 50px;
     padding-top: 50px;
     position: absolute;
 }
 
 h1 {
-    color: @black-colour;
+    color: $black-colour;
     text-transform: uppercase;
 }
 
 h2 {
-    color: @grey-colour;
+    color: $grey-colour;
     font-size: x-large;
     text-transform: uppercase;
 }
 
 h3 {
-    color: @accent-dark-colour;
+    color: $teal-dark-colour;
     text-transform: uppercase;
 }
 
 h4 {
-    color: @accent-colour;
+    color: $teal-colour;
 }
 
 a,
 a:focus,
 a:hover {
-    color: @accent-colour;
+    color: $teal-colour;
     text-decoration: none;
     -webkit-transition: all 0.4s ease-in-out;
     transition: all 0.4s ease-in-out;
