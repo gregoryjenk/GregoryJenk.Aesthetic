@@ -1,44 +1,40 @@
 ﻿/// <binding BeforeBuild="default" Clean="clean" />
 
-var cleanCSS = require("gulp-clean-css");
 var del = require("del");
 var gulp = require("gulp");
-var less = require("gulp-less");
+var cleanCSS = require("gulp-clean-css");
 var rename = require("gulp-rename");
+var sass = require("gulp-sass")(require("sass"));
 var sourcemaps = require("gulp-sourcemaps");
 
 var paths = {
     lib: [
         "./node_modules/bootstrap/dist/css/bootstrap.min.css",
-        "./node_modules/bootstrap/dist/js/bootstrap.min.js",
-        "./node_modules/jquery/dist/jquery.slim.min.js",
-        "./node_modules/popper.js/dist/umd/popper.min.js"
+        "./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+    ],
+    sass: [
+        "./src/styles/default-black-style.scss",
+        "./src/styles/default-white-style.scss"
     ]
 };
 
 gulp.task("clean", function () {
     return del([
-        "./dist/css",
-        "./dist/js",
-        "./lib"
+        "./dist/css/",
+        "./dist/js/",
+        "./lib/"
     ]);
 });
 
 gulp.task("clean-css", function () {
     return del([
-        "./dist/css"
+        "./dist/css/"
     ]);
 });
 
 gulp.task("lib", function () {
     return gulp.src(paths.lib, { base: "node_modules" })
-        .pipe(gulp.dest("./lib"));
-});
-
-gulp.task("less", function () {
-    return gulp.src(["./src/less/**/*.less", "!./src/less/variable.less"])
-        .pipe(less())
-        .pipe(gulp.dest("./dist/css"));
+        .pipe(gulp.dest("./lib/"));
 });
 
 gulp.task("min-css", function () {
@@ -49,11 +45,19 @@ gulp.task("min-css", function () {
         .pipe(rename({
             suffix: ".min"
         }))
-        .pipe(gulp.dest("./dist/css"));
+        .pipe(gulp.dest("./dist/css/"));
 });
 
-gulp.task("watch-less", function () {
-    return gulp.watch("./src/less/**/*", gulp.series("clean-css", "less", "min-css"));
+gulp.task("sass", function () {
+    return gulp.src(paths.sass)
+        //.pipe(sourcemaps.init())
+        .pipe(sass().on("error", sass.logError))
+        //.pipe(sourcemaps.write())
+        .pipe(gulp.dest("./dist/css/"));
 });
 
-gulp.task("default", gulp.series("clean", "lib", "less", "min-css"));
+gulp.task("watch-sass", function () {
+    return gulp.watch("./src/styles/**/*", gulp.series("clean-css", "sass", "min-css"));
+});
+
+gulp.task("default", gulp.series("clean", "lib", "sass", "min-css"));
