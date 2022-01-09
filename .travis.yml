@@ -1,8 +1,11 @@
 language: node_js
+
 node_js:
   - 14
+
 before_script:
   - cd ./src/GregoryJenk.Aesthetic.Scheme.Default
   - npm install
+
 script:
   - gulp

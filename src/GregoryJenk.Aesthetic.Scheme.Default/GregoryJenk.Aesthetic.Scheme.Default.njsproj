@@ -33,37 +33,43 @@
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>
-    <Content Include="dist\fonts\telex\telex-regular-400-latin-ext.woff2" />
-    <Content Include="dist\fonts\telex\telex-regular-400-latin.woff2" />
-    <Content Include="dist\fonts\telex\telex-regular-400.ttf" />
-    <Content Include="dist\images\icons\code-black-16x16-icon.png" />
-    <Content Include="dist\images\icons\code-black-32x32-icon.png" />
-    <Content Include="dist\images\icons\code-black-48x48-icon.png" />
-    <Content Include="dist\images\icons\code-black-64x64-icon.png" />
-    <Content Include="package-lock.json" />
-    <Content Include="README.md" />
-    <Content Include="src\images\icons\code-black-icon.svg" />
-    <Content Include="src\images\icons\koala-emoji-icon.svg" />
-    <Content Include="src\less\default.less" />
-    <Content Include="package.json" />
+    <Content Include="dist\fonts\telex\telex-regular-400-font.ttf" />
+    <Content Include="dist\fonts\telex\telex-regular-400-latin-ext-font.woff2" />
+    <Content Include="dist\fonts\telex\telex-regular-400-latin-font.woff2" />
     <Content Include="dist\images\favicon.ico" />
-    <Content Include="src\html\style-guide.html" />
-    <Content Include="src\less\variable.less" />
+    <Content Include="dist\images\icons\icon-code-black-16x16-image.png" />
+    <Content Include="dist\images\icons\icon-code-black-32x32-image.png" />
+    <Content Include="dist\images\icons\icon-code-black-48x48-image.png" />
+    <Content Include="dist\images\icons\icon-code-black-64x64-image.png" />
+    <Content Include="package-lock.json" />
+    <Content Include="package.json" />
+    <Content Include="README.md" />
+    <Content Include="src\guides\default-style-guide.html" />
+    <Content Include="src\images\icons\icon-code-black-image.svg" />
+    <Content Include="src\images\icons\icon-code-core-image.svg" />
+    <Content Include="src\images\icons\icon-koala-emoji-image.svg" />
+    <Content Include="src\styles\default-black-style.scss" />
+    <Content Include="src\styles\default-core-style.scss" />
+    <Content Include="src\styles\default-white-style.scss" />
+    <Content Include="src\styles\variables\variable-black-style.scss" />
+    <Content Include="src\styles\variables\variable-white-style.scss" />
+    <Content Include="src\styles\variables\variable-core-style.scss" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="gulpfile.js" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="dist\" />
     <Folder Include="dist\fonts\" />
     <Folder Include="dist\fonts\telex\" />
-    <Folder Include="dist\images\icons\" />
-    <Folder Include="src\images\icons\" />
-    <Folder Include="src\less\" />
-    <Folder Include="src\" />
-    <Folder Include="dist\" />
     <Folder Include="dist\images\" />
-    <Folder Include="src\html\" />
+    <Folder Include="dist\images\icons\" />
+    <Folder Include="src\" />
+    <Folder Include="src\guides\" />
     <Folder Include="src\images\" />
+    <Folder Include="src\images\icons\" />
+    <Folder Include="src\styles\" />
+    <Folder Include="src\styles\variables\" />
   </ItemGroup>
   <!-- Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them. -->
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="False" />

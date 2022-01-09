@@ -1,7 +1,10 @@
 version: '{branch}.{build}'
+
 environment:
   nodejs_version: 14
-image: Visual Studio 2019
+
+image: Visual Studio 2022
+
 build:
   project: ./src/GregoryJenk.Aesthetic.sln
   verbosity: detailed
