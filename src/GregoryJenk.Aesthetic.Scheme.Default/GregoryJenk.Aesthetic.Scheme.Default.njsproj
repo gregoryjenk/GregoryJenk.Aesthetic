@@ -52,8 +52,8 @@
     <Content Include="src\styles\default-core-style.scss" />
     <Content Include="src\styles\default-white-style.scss" />
     <Content Include="src\styles\variables\variable-black-style.scss" />
-    <Content Include="src\styles\variables\variable-white-style.scss" />
     <Content Include="src\styles\variables\variable-core-style.scss" />
+    <Content Include="src\styles\variables\variable-white-style.scss" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="gulpfile.js" />
