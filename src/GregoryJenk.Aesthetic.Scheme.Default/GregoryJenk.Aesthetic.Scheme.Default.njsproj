@@ -51,6 +51,7 @@
     <Content Include="src\styles\default-black-style.scss" />
     <Content Include="src\styles\default-core-style.scss" />
     <Content Include="src\styles\default-white-style.scss" />
+    <Content Include="src\styles\icons\icon-code-black-style.scss" />
     <Content Include="src\styles\variables\variable-black-style.scss" />
     <Content Include="src\styles\variables\variable-core-style.scss" />
     <Content Include="src\styles\variables\variable-white-style.scss" />
@@ -69,6 +70,7 @@
     <Folder Include="src\images\" />
     <Folder Include="src\images\icons\" />
     <Folder Include="src\styles\" />
+    <Folder Include="src\styles\icons\" />
     <Folder Include="src\styles\variables\" />
   </ItemGroup>
   <!-- Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them. -->

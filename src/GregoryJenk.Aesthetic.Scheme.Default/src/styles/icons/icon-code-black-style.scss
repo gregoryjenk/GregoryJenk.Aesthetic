@@ -1,0 +1,12 @@
+@import "../variables/variable-black-style.scss";
+
+.forward-slash {
+    stroke: $grey-darkest-colour;
+    stroke-width: 1.2px;
+}
+
+.greater-than, .less-than {
+    fill: none;
+    stroke: $grey-darkest-colour;
+    stroke-width: 1.4px;
+}
