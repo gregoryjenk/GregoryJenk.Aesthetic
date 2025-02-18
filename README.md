@@ -15,5 +15,3 @@ See the published [NPM package here](https://www.npmjs.com/package/@gregoryjenk/
 | :--- | :--- |
 | AppVeyor (develop) | [![Build status](https://ci.appveyor.com/api/projects/status/hcc9dgl67mmrae2g/branch/develop?svg=true)](https://ci.appveyor.com/project/gregoryjenk/gregoryjenk-aesthetic/branch/develop) |
 | AppVeyor (master) | [![Build status](https://ci.appveyor.com/api/projects/status/hcc9dgl67mmrae2g/branch/master?svg=true)](https://ci.appveyor.com/project/gregoryjenk/gregoryjenk-aesthetic/branch/master) |
-| Travis CI (develop) | [![Build Status](https://travis-ci.org/gregoryjenk/GregoryJenk.Aesthetic.svg?branch=develop)](https://travis-ci.org/gregoryjenk/GregoryJenk.Aesthetic) |
-| Travis CI (master) | [![Build Status](https://travis-ci.org/gregoryjenk/GregoryJenk.Aesthetic.svg?branch=master)](https://travis-ci.org/gregoryjenk/GregoryJenk.Aesthetic) |
