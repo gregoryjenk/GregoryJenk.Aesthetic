@@ -1,39 +1,40 @@
 {
   "name": "@gregoryjenk/aesthetic-scheme-default",
-  "description": "The shared NPM package with resources for default personal branding.",
   "version": "2.0.3",
-  "private": false,
-  "publishConfig": {
-    "access": "public"
-  },
   "author": {
     "email": "gregoryjenk@gmail.com",
     "name": "Gregory Jenkins",
     "url": "https://www.gregoryjenk.com"
   },
+  "bugs": {
+    "url": "https://github.com/gregoryjenk/GregoryJenk.Aesthetic/issues"
+  },
+  "description": "The shared NPM package with resources for default personal branding.",
+  "devDependencies": {
+    "bootstrap": "5.3.3",
+    "del": "8.0.0",
+    "gulp": "5.0.0",
+    "gulp-clean-css": "4.3.0",
+    "gulp-rename": "2.0.0",
+    "gulp-sass": "6.0.0",
+    "gulp-sourcemaps": "3.0.0",
+    "sass": "1.85.0"
+  },
+  "homepage": "https://www.gregoryjenk.com",
   "keywords": [
     "css",
     "gulp",
     "scss",
     "style"
   ],
-  "bugs": {
-    "url": "https://github.com/gregoryjenk/GregoryJenk.Aesthetic/issues"
-  },
-  "devDependencies": {
-    "bootstrap": "5.1.3",
-    "del": "6.0.0",
-    "gulp": "4.0.2",
-    "gulp-clean-css": "4.3.0",
-    "gulp-rename": "2.0.0",
-    "gulp-sass": "5.1.0",
-    "gulp-sourcemaps": "3.0.0",
-    "sass": "1.45.2"
-  },
-  "homepage": "https://www.gregoryjenk.com",
   "license": "MIT",
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/gregoryjenk/GregoryJenk.Aesthetic.git"
-  }
+  },
+  "type": "module"
 }
