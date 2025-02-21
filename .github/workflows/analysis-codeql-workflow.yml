@@ -17,7 +17,9 @@ jobs:
             matrix:
                 include:
                     - build-mode: autobuild
-                      language: csharp
+                      language: actions
+                    - build-mode: autobuild
+                      language: javascript-typescript
         steps:
             - name: Checkout
               uses: actions/checkout@v4
