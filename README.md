@@ -13,5 +13,5 @@ See the published [NPM package here](https://www.npmjs.com/package/@gregoryjenk/
 
 | Build | Status |
 | :--- | :--- |
-| AppVeyor (develop) | [![Build status](https://ci.appveyor.com/api/projects/status/hcc9dgl67mmrae2g/branch/develop?svg=true)](https://ci.appveyor.com/project/gregoryjenk/gregoryjenk-aesthetic/branch/develop) |
-| AppVeyor (master) | [![Build status](https://ci.appveyor.com/api/projects/status/hcc9dgl67mmrae2g/branch/master?svg=true)](https://ci.appveyor.com/project/gregoryjenk/gregoryjenk-aesthetic/branch/master) |
+| GitHub Actions: `develop` | [![Build status.](https://github.com/gregoryjenk/GregoryJenk.Aesthetic/actions/workflows/continuous-integration-workflow.yml/badge.svg?branch=develop)](https://github.com/gregoryjenk/GregoryJenk.Aesthetic/actions/workflows/continuous-integration-workflow.yml?query=branch%3Adevelop) |
+| GitHub Actions: `master` | [![Build status.](https://github.com/gregoryjenk/GregoryJenk.Aesthetic/actions/workflows/continuous-integration-workflow.yml/badge.svg?branch=master)](https://github.com/gregoryjenk/GregoryJenk.Aesthetic/actions/workflows/continuous-integration-workflow.yml?query=branch%3Amaster) |
