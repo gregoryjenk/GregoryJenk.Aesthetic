@@ -1,26 +1,20 @@
-﻿/*
-    ## Standard fonts.
-*/
+﻿@use "sass:color";
+
+//Standard fonts.
 $text-font-weight: 400;
 
-/*
-    ## Greyscale colours.
-*/
+//Greyscale colours.
 $black-colour: #000000;
-
 $grey-colour: #888888;
-$grey-dark-colour: darken($grey-colour, 20%);
-$grey-darkest-colour: darken($grey-colour, 30%);
-$grey-light-colour: lighten($grey-colour, 20%);
-$grey-lightest-colour: lighten($grey-colour, 30%);
+$grey-dark-colour: color.adjust($grey-colour, $lightness: -20%);
+$grey-darkest-colour: color.adjust($grey-colour, $lightness: -30%);
+$grey-light-colour: color.adjust($grey-colour, $lightness: 20%);
+$grey-lightest-colour: color.adjust($grey-colour, $lightness: 30%);
+$white-colour: color.adjust($black-colour, $hue: 180deg);
 
-$white-colour: adjust-hue($black-colour, 180deg);
-
-/*
-    ## Additional colours.
-*/
+//Schematic colours.
 $teal-colour: #009999;
-$teal-dark-colour: darken($teal-colour, 6.6%);
-$teal-darkest-colour: darken($teal-colour, 10%);
-$teal-light-colour: lighten($teal-colour, 6.6%);
-$teal-lightest-colour: lighten($teal-colour, 10%);
+$teal-dark-colour: color.adjust($teal-colour, $lightness: -6.6%);
+$teal-darkest-colour: color.adjust($teal-colour, $lightness: -10%);
+$teal-light-colour: color.adjust($teal-colour, $lightness: 6.6%);
+$teal-lightest-colour: color.adjust($teal-colour, $lightness: 10%);
