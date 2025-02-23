@@ -16,7 +16,7 @@ const paths = {
     source: {
         scss: [
             "./src/styles/**/*",
-            "!./src/styles/default-core-style.scss",
+            "!./src/styles/**/*-core-style.scss",
             "!./src/styles/variables/**/*"
         ]
     }
@@ -50,7 +50,7 @@ export function compileSass() {
     let sass = sassFactory(sassCompiler);
 
     return src(paths.source.scss)
-        .pipe(sass())
+        .pipe(sass().on("error", sass.logError))
         .pipe(dest("./dist/css"));
 }
 
