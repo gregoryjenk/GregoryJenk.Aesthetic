@@ -1,0 +1,12 @@
+$spectrum-0-colour: none !default;
+
+.forward-slash {
+    stroke: $spectrum-0-colour;
+    stroke-width: 1.2px;
+}
+
+.greater-than, .less-than {
+    fill: none;
+    stroke: $spectrum-0-colour;
+    stroke-width: 1.4px;
+}

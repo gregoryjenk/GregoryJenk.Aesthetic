@@ -10,7 +10,7 @@ $grey-dark-colour: color.adjust($grey-colour, $lightness: -20%);
 $grey-darkest-colour: color.adjust($grey-colour, $lightness: -30%);
 $grey-light-colour: color.adjust($grey-colour, $lightness: 20%);
 $grey-lightest-colour: color.adjust($grey-colour, $lightness: 30%);
-$white-colour: color.adjust($black-colour, $hue: 180deg);
+$white-colour: color.invert($black-colour);
 
 //Schematic colours.
 $teal-colour: #009999;
