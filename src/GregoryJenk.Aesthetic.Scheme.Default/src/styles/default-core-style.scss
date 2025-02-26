@@ -1,4 +1,14 @@
-﻿//Latin Extended.
+﻿@use "variables/variable-core-style" as *;
+
+$spectrum-0-colour: none !default;
+$spectrum-1-colour: none !default;
+$spectrum-2-colour: none !default;
+$spectrum-3-colour: none !default;
+$spectrum-4-colour: none !default;
+$spectrum-5-colour: none !default;
+$spectrum-6-colour: none !default;
+
+//Latin Extended.
 @font-face {
     /*font-display: swap;*/
     font-family: "Telex";
