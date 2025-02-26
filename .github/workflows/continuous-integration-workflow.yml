@@ -17,6 +17,10 @@ jobs:
               uses: actions/setup-dotnet@v4
               with:
                 dotnet-version: 9.0.x
+            - name: Install (NPM)
+              run: npm clean-install --prefix ./src/GregoryJenk.Aesthetic.Scheme.Default
+            - name: Default (Gulp)
+              run: gulp default --gulpfile ./src/GregoryJenk.Aesthetic.Scheme.Default/gulpfile.mjs
             - name: Restore (.NET)
               run: dotnet restore src
             - name: Build (.NET)
