@@ -31,12 +31,20 @@ jobs:
             - name: Attest
               uses: actions/attest-build-provenance@v1
               with:
-                subject-path: ./src/GregoryJenk.Aesthetic.Scheme.Default/**/*, !**/node_modules/**, !**/obj/**, !**/*.esproj
+                subject-path: |
+                    ./src/GregoryJenk.Aesthetic.Scheme.Default/**/*
+                    !**/*.esproj
+                    !**/node_modules/**
+                    !**/obj/**
             - name: Upload
               uses: actions/upload-artifact@v4
               with:
                 name: GregoryJenk.Aesthetic.Scheme.Default
-                path: ./src/GregoryJenk.Aesthetic.Scheme.Default/**/*, !**/node_modules/**, !**/obj/**, !**/*.esproj
+                path: |
+                    ./src/GregoryJenk.Aesthetic.Scheme.Default/**/*
+                    !**/*.esproj
+                    !**/node_modules/**
+                    !**/obj/**
     live-deploy:
         name: Live
         needs: build
