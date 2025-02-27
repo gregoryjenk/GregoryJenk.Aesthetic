@@ -36,7 +36,7 @@ jobs:
               uses: actions/upload-artifact@v4
               with:
                 name: GregoryJenk.Aesthetic.Scheme.Default
-                path: ./src/GregoryJenk.Aesthetic.Scheme.Default/**/*
+                path: ./src/GregoryJenk.Aesthetic.Scheme.Default/**/*, !**/node_modules/**, !**/obj/**, !**/*.esproj
     live-deploy:
         name: Live
         needs: build
