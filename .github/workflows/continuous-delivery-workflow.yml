@@ -31,11 +31,11 @@ jobs:
             - name: Attest
               uses: actions/attest-build-provenance@v1
               with:
-                subject-path: ./src/GregoryJenk.Aesthetic.Scheme.Default/**/*, !node_modules/**, !obj/**
+                subject-path: ./src/GregoryJenk.Aesthetic.Scheme.Default/**/*, !**/node_modules/**, !**/obj/**, !**/*.esproj
             - name: Upload
               uses: actions/upload-artifact@v4
               with:
-                name: "@gregoryjenk/aesthetic-scheme-default"
+                name: GregoryJenk.Aesthetic.Scheme.Default
                 path: ./src/GregoryJenk.Aesthetic.Scheme.Default/**/*
     live-deploy:
         name: Live
@@ -48,7 +48,7 @@ jobs:
             - name: Download
               uses: actions/download-artifact@v4
               with:
-                name: "@gregoryjenk/aesthetic-scheme-default"
+                name: GregoryJenk.Aesthetic.Scheme.Default
                 path: ./@gregoryjenk/aesthetic-scheme-default
             - name: Publish (NPM)
               env:
