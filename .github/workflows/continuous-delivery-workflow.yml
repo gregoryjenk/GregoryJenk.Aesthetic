@@ -1,0 +1,56 @@
+name: Continuous Delivery
+on:
+    release:
+        types:
+            - published
+    workflow_dispatch:
+jobs:
+    build:
+        name: Build
+        runs-on: ubuntu-latest
+        permissions:
+            attestations: write
+            id-token: write
+        steps:
+            - name: Checkout
+              uses: actions/checkout@v4
+            - name: Setup (.NET)
+              uses: actions/setup-dotnet@v4
+              with:
+                dotnet-version: 9.0.x
+            - name: Install (NPM)
+              run: npm clean-install --prefix ./src/GregoryJenk.Aesthetic.Scheme.Default
+            - name: Default (Gulp)
+              run: gulp default --gulpfile ./src/GregoryJenk.Aesthetic.Scheme.Default/gulpfile.mjs
+            - name: Restore (.NET)
+              run: dotnet restore src
+            - name: Build (.NET)
+              run: dotnet build src --configuration Release --no-restore
+            - name: Publish (.NET)
+              run: dotnet publish src --configuration Release --no-build
+            - name: Attest
+              uses: actions/attest-build-provenance@v1
+              with:
+                subject-path: ./src/GregoryJenk.Aesthetic.Scheme.Default/**/*
+            - name: Upload
+              uses: actions/upload-artifact@v4
+              with:
+                name: "@gregoryjenk/aesthetic-scheme-default"
+                path: ./src/GregoryJenk.Aesthetic.Scheme.Default/**/*
+    live-deploy:
+        name: Live
+        needs: build
+        runs-on: ubuntu-latest
+        environment:
+            name: Live
+            url: https://www.npmjs.com/package/@gregoryjenk/aesthetic-scheme-default
+        steps:
+            - name: Download
+              uses: actions/download-artifact@v4
+              with:
+                name: "@gregoryjenk/aesthetic-scheme-default"
+                path: ./@gregoryjenk/aesthetic-scheme-default
+            - name: Publish (NPM)
+              env:
+                NODE_AUTH_TOKEN: ${{ secrets.NPM_ACCESS_TOKEN }}
+              run: npm publish ./@gregoryjenk/aesthetic-scheme-default
