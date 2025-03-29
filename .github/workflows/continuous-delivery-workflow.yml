@@ -19,9 +19,9 @@ jobs:
               with:
                 dotnet-version: 9.0.x
             - name: Install (NPM)
-              run: npm clean-install --prefix ./src/GregoryJenk.Aesthetic.Scheme.Default
+              run: npm clean-install --prefix ./src/GregoryJenk.Aesthetic.Default
             - name: Default (Gulp)
-              run: gulp default --gulpfile ./src/GregoryJenk.Aesthetic.Scheme.Default/gulpfile.mjs
+              run: gulp default --gulpfile ./src/GregoryJenk.Aesthetic.Default/gulpfile.mjs
             - name: Restore (.NET)
               run: dotnet restore src
             - name: Build (.NET)
@@ -32,16 +32,16 @@ jobs:
               uses: actions/attest-build-provenance@v1
               with:
                 subject-path: |
-                    ./src/GregoryJenk.Aesthetic.Scheme.Default/**/*
+                    ./src/GregoryJenk.Aesthetic.Default/**/*
                     !**/*.esproj
                     !**/node_modules/**
                     !**/obj/**
             - name: Upload
               uses: actions/upload-artifact@v4
               with:
-                name: GregoryJenk.Aesthetic.Scheme.Default
+                name: GregoryJenk.Aesthetic.Default
                 path: |
-                    ./src/GregoryJenk.Aesthetic.Scheme.Default/**/*
+                    ./src/GregoryJenk.Aesthetic.Default/**/*
                     !**/*.esproj
                     !**/node_modules/**
                     !**/obj/**
@@ -53,7 +53,7 @@ jobs:
             id-token: write
         environment:
             name: Live
-            url: https://www.npmjs.com/package/@gregoryjenk/aesthetic-scheme-default
+            url: https://www.npmjs.com/package/@gregoryjenk/aesthetic-default
         steps:
             - name: Setup (Node.js)
               uses: actions/setup-node@v4
@@ -62,9 +62,9 @@ jobs:
             - name: Download
               uses: actions/download-artifact@v4
               with:
-                name: GregoryJenk.Aesthetic.Scheme.Default
-                path: ./@gregoryjenk/aesthetic-scheme-default
+                name: GregoryJenk.Aesthetic.Default
+                path: ./@gregoryjenk/aesthetic-default
             - name: Publish (NPM)
               env:
                 NODE_AUTH_TOKEN: ${{ secrets.NPM_ACCESS_TOKEN }}
-              run: npm publish ./@gregoryjenk/aesthetic-scheme-default
+              run: npm publish ./@gregoryjenk/aesthetic-default

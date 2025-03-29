@@ -3,11 +3,11 @@
 ## Getting Started
 
 1. Clone this Aesthetic repository.
-2. Set [src/GregoryJenk.Aesthetic.Scheme.Default](./src/GregoryJenk.Aesthetic.Scheme.Default) as the current directory.
-3. Run the ```npm install``` command.
-4. Run the ```gulp``` command.
+2. Set [src/GregoryJenk.Aesthetic.Default](./src/GregoryJenk.Aesthetic.Default) as the current directory.
+3. Run the `npm install` command.
+4. Run the `gulp default` command.
 
-See the published [NPM package here](https://www.npmjs.com/package/@gregoryjenk/aesthetic-scheme-default).
+See the published [NPM package here](https://www.npmjs.com/package/@gregoryjenk/aesthetic-default).
 
 ## Builds
 

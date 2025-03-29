@@ -18,9 +18,9 @@ jobs:
               with:
                 dotnet-version: 9.0.x
             - name: Install (NPM)
-              run: npm clean-install --prefix ./src/GregoryJenk.Aesthetic.Scheme.Default
+              run: npm clean-install --prefix ./src/GregoryJenk.Aesthetic.Default
             - name: Default (Gulp)
-              run: gulp default --gulpfile ./src/GregoryJenk.Aesthetic.Scheme.Default/gulpfile.mjs
+              run: gulp default --gulpfile ./src/GregoryJenk.Aesthetic.Default/gulpfile.mjs
             - name: Restore (.NET)
               run: dotnet restore src
             - name: Build (.NET)
