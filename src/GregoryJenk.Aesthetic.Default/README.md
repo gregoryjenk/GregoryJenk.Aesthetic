@@ -1,4 +1,4 @@
-# Aesthetic Scheme Default
+# Aesthetic Default
 
 ## Getting Started
 
