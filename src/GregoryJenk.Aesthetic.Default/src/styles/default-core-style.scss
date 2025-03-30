@@ -10,7 +10,7 @@ $spectrum-6-colour: none !default;
 
 @font-face {
     font-display: auto;
-    font-family: "source-sans-3-variable";
+    font-family: "Source Sans 3 Variable";
     font-stretch: normal;
     font-style: normal;
     font-weight: 200 900;
@@ -21,7 +21,7 @@ $spectrum-6-colour: none !default;
 
 @font-face {
     font-display: auto;
-    font-family: "source-sans-3-variable";
+    font-family: "Source Sans 3 Variable";
     font-stretch: normal;
     font-style: italic;
     font-weight: 200 900;
@@ -42,7 +42,7 @@ a {
 body {
     background-color: $spectrum-0-colour;
     color: $spectrum-6-colour;
-    font-family: "source-sans-3-variable", sans-serif;
+    font-family: "Source Sans 3 Variable", sans-serif;
 }
 
 footer {
