@@ -34,6 +34,7 @@ jobs:
                 subject-path: |
                     ./src/GregoryJenk.Aesthetic.Default/**/*
                     !**/*.esproj
+                    !**/lib/**
                     !**/node_modules/**
                     !**/obj/**
             - name: Upload
@@ -43,6 +44,7 @@ jobs:
                 path: |
                     ./src/GregoryJenk.Aesthetic.Default/**/*
                     !**/*.esproj
+                    !**/lib/**
                     !**/node_modules/**
                     !**/obj/**
     live-deploy:
