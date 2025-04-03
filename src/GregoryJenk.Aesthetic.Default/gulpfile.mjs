@@ -5,7 +5,7 @@ import { dest, series, src, watch } from "gulp";
 import cleanCss from "gulp-clean-css";
 import rename from "gulp-rename";
 import sassFactory from "gulp-sass";
-import sourcemaps from "gulp-sourcemaps";
+import sourceMaps from "gulp-sourcemaps";
 import * as sassCompiler from "sass";
 
 const paths = {
@@ -60,10 +60,10 @@ export function minimiseCss() {
     };
 
     return src("./dist/css/**/*.css")
-        .pipe(sourcemaps.init())
+        .pipe(sourceMaps.init())
         .pipe(cleanCss())
         .pipe(rename(renameOptions))
-        .pipe(sourcemaps.write("."))
+        .pipe(sourceMaps.write("."))
         .pipe(dest("./dist/css"));
 }
 
