@@ -46,13 +46,14 @@ body {
 }
 
 footer {
-    background-color: $spectrum-5-colour;
+    background-color: $spectrum-6-colour;
     color: $spectrum-1-colour;
     font-size: smaller;
 }
 
 h1,
 .h1 {
+    font-weight: bold;
     text-transform: uppercase;
 }
 
