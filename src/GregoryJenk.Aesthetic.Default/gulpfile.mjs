@@ -14,7 +14,7 @@ const paths = {
         "./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
     ],
     source: {
-        scss: [
+        styles: [
             "./src/styles/**/*",
             "!./src/styles/**/*-core-style.scss",
             "!./src/styles/variables/**/*"
@@ -49,7 +49,7 @@ export function copyLibraries() {
 export function compileSass() {
     let sass = sassFactory(sassCompiler);
 
-    return src(paths.source.scss)
+    return src(paths.source.styles)
         .pipe(sass().on("error", sass.logError))
         .pipe(dest("./dist/css"));
 }
@@ -68,7 +68,7 @@ export function minimiseCss() {
 }
 
 export function watchSass() {
-    watch(paths.source.scss, series(cleanCssAsync, compileSass, minimiseCss));
+    watch(paths.source.styles, series(cleanCssAsync, compileSass, minimiseCss));
 }
 
 export default series(cleanAsync, copyLibraries, compileSass, minimiseCss);
