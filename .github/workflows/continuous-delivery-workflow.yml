@@ -67,6 +67,4 @@ jobs:
                 name: GregoryJenk.Aesthetic.Default
                 path: ./@gregoryjenk/aesthetic-default
             - name: Publish (NPM)
-              env:
-                NODE_AUTH_TOKEN: ${{ secrets.NPM_ACCESS_TOKEN }}
               run: npm publish ./@gregoryjenk/aesthetic-default
